@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class SoundVolumeChange : MonoBehaviour
 {
-    [SerializeField] AudioSource[] MusicAudioSrcs;
-    [SerializeField] Slider slider;
+    [SerializeField] AudioSource[] MusicAudioSrcs = null;
+    [SerializeField] Slider slider = null;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +23,10 @@ public class SoundVolumeChange : MonoBehaviour
 
     private void UpdateVolume()
     {
+        float volume = PlayerPrefs.GetFloat("MusicVolume", 0.7f);
         for (int i = 0; i < MusicAudioSrcs.Length; i++)
         {
-            MusicAudioSrcs[i].volume = PlayerPrefs.GetFloat("MusicVolume", 0.7f);
+            MusicAudioSrcs[i].volume = volume*volume;
         }
     }
 }

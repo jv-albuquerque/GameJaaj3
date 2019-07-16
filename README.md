@@ -10,10 +10,10 @@ A TD (Tower Defense) game, that the player cotrols the defense putting the tower
 
 ## TODO
 * **João Vitor**
- * Tile System
- * IA Tower
- * Block to put the tower anywhere
- * Make other types of tower
+   * Tile System
+   * IA Tower
+   * Block to put the tower anywhere
+   * Make other types of tower
 
 ## Authors
 * **João Vitor Filgueira Albuquerque** - [jv-albuquerque](https://github.com/jv-albuquerque)

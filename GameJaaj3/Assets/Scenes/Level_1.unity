@@ -4812,5 +4812,38 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 643395434}
+    - target: {fileID: 2200450739740725897, guid: 86020249d9dbf2640a3f1b2fcc0dbf66,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c,
+        type: 3}
+    - target: {fileID: 2200450739740725897, guid: 86020249d9dbf2640a3f1b2fcc0dbf66,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587894080920623929, guid: 86020249d9dbf2640a3f1b2fcc0dbf66,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c,
+        type: 3}
+    - target: {fileID: 3587894080920623929, guid: 86020249d9dbf2640a3f1b2fcc0dbf66,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893878664350936759, guid: 86020249d9dbf2640a3f1b2fcc0dbf66,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c,
+        type: 3}
+    - target: {fileID: 1893878664350936759, guid: 86020249d9dbf2640a3f1b2fcc0dbf66,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86020249d9dbf2640a3f1b2fcc0dbf66, type: 3}

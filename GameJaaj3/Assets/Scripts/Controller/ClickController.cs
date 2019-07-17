@@ -31,7 +31,9 @@ public class ClickController : MonoBehaviour
                 }
                 else if(hit.collider.CompareTag("TileButton"))
                 {
-                    Debug.Log("upgrade");
+                    lastTileHit.DeactiveUI();
+                    hit.collider.gameObject.GetComponent<TileButton>().Action();
+                    lastTileHit = null;
                 }
             }
             else

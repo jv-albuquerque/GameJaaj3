@@ -5,8 +5,11 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] private GameObject tile = null;
 
-    public int height = 10;
-    public int width = 10;
+    [SerializeField] private float offsetX = 0.0f;
+    [SerializeField] private float offsetY = 0.0f;
+
+    [SerializeField] private int height = 10;
+    [SerializeField] private int width = 10;
 
     private List<GameObject> tiles = null;
 
@@ -21,7 +24,7 @@ public class LevelController : MonoBehaviour
         {
             for (int j = 0; j < width; j++)
             {
-                tiles.Add(Instantiate(tile, new Vector2(-8.5f + (j * 0.6f), -4.6f + (i * 0.6f)), Quaternion.identity));
+                tiles.Add(Instantiate(tile, new Vector2(-8.5f + (j * 0.6f) + offsetX, -4.6f + (i * 0.6f) + offsetY), Quaternion.identity));
             }
         }
     }

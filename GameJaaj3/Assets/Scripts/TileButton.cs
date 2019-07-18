@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TileButton : MonoBehaviour
 {
@@ -30,7 +28,7 @@ public class TileButton : MonoBehaviour
 
     private void Upgrade()
     {
-        
+        tile.Upgrade();
     }
 
     private void Sell()

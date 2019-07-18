@@ -17,7 +17,6 @@ public class TowerShoot : MonoBehaviour
     {
         cdShoot = new Cooldown(cooldownToShoot);
         cdShoot.Start();
-
         enemyController = GameObject.FindGameObjectWithTag("GameController").GetComponent<EnemyController>();
     }
 
@@ -31,17 +30,18 @@ public class TowerShoot : MonoBehaviour
     }
 
     private bool Shoot()
-    { 
-        FindEnemies();
+    {
         if( enemyToAttack != null &&
             Vector2.Distance(enemyToAttack.transform.position, transform.position) <= attackRange &&
-            enemyToAttack.GetComponent<EnemyReceiveDamage>().IsActive)
+            enemyToAttack.GetComponent<EnemyReceiveDamage>().IsActive )
         {
             //todo: shoot form shootPosition and rotate the tower
             GameObject proj = Instantiate(projectile, transform.position, transform.rotation);
             proj.GetComponent<ProjectileMovement>().SetTarget = enemyToAttack;
             return true;
         }
+        else
+            FindEnemies();
 
         return false;
     }
@@ -57,5 +57,13 @@ public class TowerShoot : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
+    public void Upgrade(int damage, float range, float newCD)
+    {
+        projectile.GetComponent<ProjectileMovement>().SetDamage = damage;
+        attackRange = range;
+        cdShoot = new Cooldown(newCD);
+        cdShoot.Start();
     }
 }

@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 8873392139891821002}
   - component: {fileID: 2563014675194913889}
   - component: {fileID: -914245738108164213}
+  - component: {fileID: 3518288685588360095}
   m_Layer: 0
   m_Name: Tower_Esperm
   m_TagString: Untagged
@@ -126,5 +127,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5594831506353772659, guid: f54000b68bb60844ea9aeec93dd91649,
     type: 3}
+  shootPosition: {fileID: 0}
   cooldownToShoot: 1
   attackRange: 1.5
+--- !u!114 &3518288685588360095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760640750044003571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7d2edbd9b723342befa8ef4fd8fd90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxUpgrade: 3
+  cost: 0a0000001900000064000000
+  damages: 0a000000140000001e000000
+  attackRanges:
+  - 1.5
+  - 1.75
+  - 2
+  cooldownsToShoot:
+  - 1
+  - 0.75
+  - 0.5

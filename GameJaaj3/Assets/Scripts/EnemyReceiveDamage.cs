@@ -3,7 +3,7 @@
 public class EnemyReceiveDamage : MonoBehaviour
 {
     [SerializeField] private int hp = 100;
-    [SerializeField] private int shild = 0;
+    [SerializeField] private int shield = 0;
 
     private bool active = true;
     private EnemyController enemyController;
@@ -20,8 +20,8 @@ public class EnemyReceiveDamage : MonoBehaviour
     {
         set
         {
-            if (value > shild)
-                hp -= value - shild;
+            if (value > shield)
+                hp -= value - shield;
 
             Debug.Log(hp);
 
@@ -30,7 +30,9 @@ public class EnemyReceiveDamage : MonoBehaviour
             {
                 //todo: stop componet to move
                 active = false;
+                
                 enemyController.RemoveEnemy(gameObject);
+
                 GameObject.Destroy(gameObject);
             }
         }        
@@ -52,11 +54,11 @@ public class EnemyReceiveDamage : MonoBehaviour
         }
     }
 
-    public int SetShild
+    public int SetShield
     {
         set
         {
-            shild = value;
+            shield = value;
         }
     }
 }

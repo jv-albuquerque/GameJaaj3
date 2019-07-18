@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 219091304199201427}
   - component: {fileID: 1953867435504378761}
   - component: {fileID: -6646418805531439994}
+  - component: {fileID: -4508279919216930531}
   m_Layer: 0
   m_Name: Tower_Condom
   m_TagString: Untagged
@@ -125,5 +126,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
+  shootPosition: {fileID: 0}
   cooldownToShoot: 1
   attackRange: 1.5
+--- !u!114 &-4508279919216930531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7661225403661267134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7d2edbd9b723342befa8ef4fd8fd90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxUpgrade: 3
+  damages: 
+  attackRanges: 
+  cooldownsToShoot: 

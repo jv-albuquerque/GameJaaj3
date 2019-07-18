@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ProjectileMovement : MonoBehaviour
 {
@@ -31,6 +29,14 @@ public class ProjectileMovement : MonoBehaviour
         set
         {
             target = value;
+        }
+    }
+
+    public int SetDamage
+    {
+        set
+        {
+            damage = value;
         }
     }
 

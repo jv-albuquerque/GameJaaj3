@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4958163223957754174}
   - component: {fileID: 3879579977621578682}
   - component: {fileID: 2580259939256562307}
+  - component: {fileID: 1713184351289000415}
   m_Layer: 0
   m_Name: Tower_DIU
   m_TagString: Untagged
@@ -95,8 +96,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 0}
+  shootPosition: {fileID: 0}
   cooldownToShoot: 1
   attackRange: 1.5
+--- !u!114 &1713184351289000415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974581221937831728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7d2edbd9b723342befa8ef4fd8fd90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxUpgrade: 3
+  damages: 
+  attackRanges: 
+  cooldownsToShoot: 
 --- !u!1 &7497156225977612452
 GameObject:
   m_ObjectHideFlags: 0

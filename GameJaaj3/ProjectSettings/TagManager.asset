@@ -8,6 +8,7 @@ TagManager:
   - Tile
   - TileButton
   - Ally
+  - Enemy
   layers:
   - Default
   - TransparentFX

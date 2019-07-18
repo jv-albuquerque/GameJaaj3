@@ -25,6 +25,10 @@ public class ClickController : MonoBehaviour
                     }
                     else
                     {
+                        if (lastTileHit != null)
+                        {
+                            lastTileHit.DeactiveUI();
+                        }
                         lastTileHit = hit.collider.gameObject.GetComponent<Tile>();
                         lastTileHit.ActiveUI();
                     }

@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TowerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject projectile = null;
+    [SerializeField] private Transform shootPosition = null;
     [SerializeField] private float cooldownToShoot = 1f;
 
     private Cooldown cdShoot;
@@ -32,11 +31,15 @@ public class TowerShoot : MonoBehaviour
     }
 
     private bool Shoot()
-    {
+    { 
         FindEnemies();
-        if(enemyToAttack != null)
+        if( enemyToAttack != null &&
+            Vector2.Distance(enemyToAttack.transform.position, transform.position) <= attackRange &&
+            enemyToAttack.GetComponent<EnemyReceiveDamage>().IsActive)
         {
-            Debug.Log(gameObject.name + " shooted");
+            //todo: shoot form shootPosition and rotate the tower
+            GameObject proj = Instantiate(projectile, transform.position, transform.rotation);
+            proj.GetComponent<ProjectileMovement>().SetTarget = enemyToAttack;
             return true;
         }
 

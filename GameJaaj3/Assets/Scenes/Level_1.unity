@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
-  defese: 0
+  defense: 0
 --- !u!114 &16933572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
-  defese: 0
+  defense: 0
 --- !u!212 &16933573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3347,6 +3347,7 @@ GameObject:
   - component: {fileID: 1253668356}
   - component: {fileID: 1253668357}
   - component: {fileID: 1253668358}
+  - component: {fileID: 1253668359}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -3452,6 +3453,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0599d2d43d3d6e499dda6510af22d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1253668359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253668351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea51ef660f37fe4fa0f20bd8f75a497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1327905384

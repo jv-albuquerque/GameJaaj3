@@ -10,6 +10,7 @@ public class IA_Enemy : MonoBehaviour
 
     public int Point = 0;
     public GameObject[] PointPosition;
+    private Vector2 target;
 
     private float distacePerFrame = 0f;
     public float movePerFrame = 2f;
@@ -22,7 +23,7 @@ public class IA_Enemy : MonoBehaviour
     void Start()
     {
         StartPosition = PointPosition[3].transform.position;
-        EndPosition = PointPosition[4].transform.position;
+        EndPosition = PointPosition[4].transform.position;        
     }
 
     void Update()
@@ -59,5 +60,13 @@ public class IA_Enemy : MonoBehaviour
         Debug.Log("!");
         isFighting = true;
     }
-    
+
+
+    public Vector2 SetTarget
+    {
+        set
+        {
+            target = value;
+        }
+    }
 }

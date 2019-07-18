@@ -9,7 +9,7 @@ public class TowerShoot : MonoBehaviour
 
     private Cooldown cdShoot;
 
-    private float attackRange = 1.5f;
+    [SerializeField] private float attackRange = 1.5f;
     private GameObject enemyToAttack = null;
 
     private EnemyController enemyController;

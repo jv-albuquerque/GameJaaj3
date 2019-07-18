@@ -13,10 +13,7 @@ public class IA_Enemy : MonoBehaviour
        
     // Quebra de rota
     public bool isFighting = false;
-
-
-
-
+    
     void Update()
     {
         if (isFighting == false)
@@ -39,5 +36,15 @@ public class IA_Enemy : MonoBehaviour
         {
             target = value;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+       if(other.CompareTag("Ally"))
+       {
+            if(other.GetComponent<IA_Combat_Ally>().enemieCount >= 2)
+            {
+               isFighting = false;
+            }
+       } 
     }
 }

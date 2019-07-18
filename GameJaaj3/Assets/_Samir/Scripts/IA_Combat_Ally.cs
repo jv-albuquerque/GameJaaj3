@@ -10,13 +10,12 @@ public class IA_Combat_Ally : MonoBehaviour
 
     public bool isFighting = false;
 
+    public float enemieCount = 0f;
+
 
     //Enemy interation
     public bool checkArea = false;
 
-    public Transform attackPos = null; // Posição do ataque
-    public LayerMask whatIsEnemy; // O que é inimigo (Quem eu vou atacar)
-    public float attackRange = 2f; // Alcance do ataque
     public bool vivo = true; // Variável que verifica se o personagem está vivo ou não
 
     void Start() 
@@ -43,15 +42,7 @@ public class IA_Combat_Ally : MonoBehaviour
 
     void Attack()
     {
-        Debug.Log(enemies.Count);
-        foreach (var target in enemies)
-        {
-            if(target ==  null)
-            {
-                enemies.Remove(target);
-            }
-            
-        }
+        
     }
     
 
@@ -63,15 +54,15 @@ public class IA_Combat_Ally : MonoBehaviour
             collider.GetComponent<IA_Enemy>().isFighting = true;
 
             enemies.Add(collider);
-        }
-
-        
+            enemieCount += 1;
+        }        
     }
 
-
-    void OnDrawGizmosSelected() // Cria um Gizmo na tela apra que seja possivel ver o a área do colisor mesmo quando ele estiver desativado
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(attackPos.position, attackRange);
+    void OnTriggerExit2D(Collider2D other) {
+        if(other.CompareTag("Enemy"))
+        {
+            enemies.Remove(other);
+            enemieCount -= 1;
+        }        
     }
 }

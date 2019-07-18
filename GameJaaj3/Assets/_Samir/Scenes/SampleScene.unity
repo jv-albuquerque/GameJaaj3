@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 438304915}
   m_Layer: 0
   m_Name: Ally
-  m_TagString: Untagged
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,12 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies: []
   isFighting: 0
+  enemieCount: 0
   checkArea: 0
-  attackPos: {fileID: 438304913}
-  whatIsEnemy:
-    serializedVersion: 2
-    m_Bits: 256
-  attackRange: 2
   vivo: 1
 --- !u!212 &438304912
 SpriteRenderer:

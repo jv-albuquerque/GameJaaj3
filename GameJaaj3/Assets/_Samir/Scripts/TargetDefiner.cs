@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TargetDefiner : MonoBehaviour
 {
-    [SerializeField]    private Transform [] nextTarget;
+    [SerializeField]    private Transform [] nextTarget = null;
     
 
 

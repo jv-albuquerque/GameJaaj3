@@ -36,15 +36,15 @@ public class EnemyController : MonoBehaviour
         enemies.Remove(enemy);
     }
 
-    // Find all enemies that is in the range of the tower
-    public void FindNearEnemies(Vector2 towerPosition, float towerRange, List<GameObject> enemiesInRange)
+    // Find the enemy that is in the range of the tower
+    public void FindNearEnemy(Vector2 towerPosition, float towerRange, ref GameObject enemyInRange)
     {
-        enemiesInRange.Clear();
-
+        enemyInRange = null;
         foreach (var enemy in enemies)
         {
-            if(Vector2.Distance(enemy.transform.position, towerPosition) <= towerRange)
-                enemiesInRange.Add(enemy);
+            //todo: choose the enemy closest to the finish position
+            if (Vector2.Distance(enemy.transform.position, towerPosition) <= towerRange)
+                enemyInRange = enemy;
         }
     }
 

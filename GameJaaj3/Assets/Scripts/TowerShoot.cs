@@ -10,7 +10,7 @@ public class TowerShoot : MonoBehaviour
     private Cooldown cdShoot;
 
     private float attackRange = 1.5f;
-    private List<GameObject> enemiesInRange = null;
+    private GameObject enemyToAttack = null;
 
     private EnemyController enemyController;
 
@@ -19,8 +19,6 @@ public class TowerShoot : MonoBehaviour
         cdShoot = new Cooldown(cooldownToShoot);
         cdShoot.Start();
 
-        enemiesInRange = new List<GameObject>();
-
         enemyController = GameObject.FindGameObjectWithTag("GameController").GetComponent<EnemyController>();
     }
 
@@ -28,20 +26,26 @@ public class TowerShoot : MonoBehaviour
     {
         if(cdShoot.IsFinished)
         {
-            Shoot();
+            if (Shoot())
+                cdShoot.Start();
         }
     }
 
-    private void Shoot()
+    private bool Shoot()
     {
         FindEnemies();
-        if(enemiesInRange.Count > 0)
+        if(enemyToAttack != null)
+        {
             Debug.Log(gameObject.name + " shooted");
+            return true;
+        }
+
+        return false;
     }
 
     private void FindEnemies()
     {
-        enemyController.FindNearEnemies(transform.position, attackRange, enemiesInRange);
+        enemyController.FindNearEnemy(transform.position, attackRange, ref enemyToAttack);
     }
 
 

@@ -2,8 +2,6 @@
 
 public class Tile : MonoBehaviour
 {
-    private bool occupied = false;
-
     [Header("Tile Buttons")]
     [SerializeField] private GameObject Acid = null;
     [SerializeField] private GameObject Espermicide = null;

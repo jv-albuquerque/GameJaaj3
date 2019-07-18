@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TileButton : MonoBehaviour
 {
-    [SerializeField] private Tile tile;
-    [SerializeField] private GameObject tower;
+    [SerializeField] private Tile tile = null;
+    [SerializeField] private GameObject tower = null;
 
     //todo: try to put this in the editor.
     //when a select one, the other is automatic unselected

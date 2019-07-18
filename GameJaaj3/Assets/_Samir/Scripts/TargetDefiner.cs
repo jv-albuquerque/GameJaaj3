@@ -8,13 +8,13 @@ public class TargetDefiner : MonoBehaviour
     
 
 
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("!");
-        if(coll.CompareTag("Enemy"))
+        
+        if(collider.CompareTag("Enemy"))
         {
-            int idx = Random.Range(0, nextTarget.Length-1);   
-            coll.GetComponent<IA_Enemy>().SetTarget = nextTarget[idx].position;
+            int idx = Random.Range(0, nextTarget.Length);   
+            collider.GetComponent<IA_Enemy>().SetTarget = nextTarget[idx].position;
         }
     }
 }

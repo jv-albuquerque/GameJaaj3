@@ -43,7 +43,7 @@ public class EnemyController : MonoBehaviour
         foreach (var enemy in enemies)
         {
             //todo: choose the enemy closest to the finish position
-            if (Vector2.Distance(enemy.transform.position, towerPosition) <= towerRange)
+            if (enemy != null && Vector2.Distance(enemy.transform.position, towerPosition) <= towerRange)
                 enemyInRange = enemy;
         }
     }

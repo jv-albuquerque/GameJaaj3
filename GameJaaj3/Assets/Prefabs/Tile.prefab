@@ -68,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 756888709
+  m_SortingLayer: 5
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c, type: 3}
   m_Color: {r: 0.8867924, g: 0.8836927, b: 0.35555357, a: 1}
@@ -121,7 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 939103620426231918}
-  tower: {fileID: 0}
+  tower: {fileID: 7760640750044003571, guid: dddeeec91ea0f76429a057ee2f7985a9, type: 3}
+  resource: {fileID: 0}
+  spriteRenderer: {fileID: 1345903287372227669}
   towerSpawn: 0
   sell: 0
   upgrade: 1
@@ -193,8 +195,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 756888709
+  m_SortingLayer: 5
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c, type: 3}
   m_Color: {r: 0.90129644, g: 0.7783019, b: 1, a: 1}
@@ -247,6 +249,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 939103620426231918}
   tower: {fileID: 7661225403661267134, guid: 749571f080b63b84cbda981b1ec519b6, type: 3}
+  resource: {fileID: 0}
+  spriteRenderer: {fileID: 2200450739740725897}
   towerSpawn: 1
   sell: 0
   upgrade: 0
@@ -318,8 +322,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 756888709
+  m_SortingLayer: 5
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c, type: 3}
   m_Color: {r: 0.17021184, g: 0.8018868, b: 0.20308006, a: 1}
@@ -372,6 +376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 939103620426231918}
   tower: {fileID: 6004030780120530894, guid: f68158c5f17608940b68db4144779373, type: 3}
+  resource: {fileID: 0}
+  spriteRenderer: {fileID: 2139883712281267532}
   towerSpawn: 1
   sell: 0
   upgrade: 0
@@ -443,8 +449,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 756888709
+  m_SortingLayer: 5
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c, type: 3}
   m_Color: {r: 0.9056604, g: 0.15806337, b: 0.1659509, a: 1}
@@ -496,7 +502,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 939103620426231918}
-  tower: {fileID: 0}
+  tower: {fileID: 7760640750044003571, guid: dddeeec91ea0f76429a057ee2f7985a9, type: 3}
+  resource: {fileID: 0}
+  spriteRenderer: {fileID: 1142798798565268390}
   towerSpawn: 0
   sell: 1
   upgrade: 0
@@ -568,8 +576,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 756888709
+  m_SortingLayer: 5
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c, type: 3}
   m_Color: {r: 0.9339623, g: 0.9127954, b: 0.20705767, a: 1}
@@ -622,6 +630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 939103620426231918}
   tower: {fileID: 3974581221937831728, guid: e607d76cf7721694e8818afdbcb916cc, type: 3}
+  resource: {fileID: 0}
+  spriteRenderer: {fileID: 3587894080920623929}
   towerSpawn: 1
   sell: 0
   upgrade: 0
@@ -699,8 +709,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 598571081
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 121a627b0eeb00440a561ec077e21f72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -825,8 +835,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 756888709
+  m_SortingLayer: 5
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c, type: 3}
   m_Color: {r: 0.54512286, g: 0.6536816, b: 0.6603774, a: 1}
@@ -879,6 +889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 939103620426231918}
   tower: {fileID: 7760640750044003571, guid: dddeeec91ea0f76429a057ee2f7985a9, type: 3}
+  resource: {fileID: 0}
+  spriteRenderer: {fileID: 1893878664350936759}
   towerSpawn: 1
   sell: 0
   upgrade: 0

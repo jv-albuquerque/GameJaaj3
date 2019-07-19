@@ -99,8 +99,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1045566041
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 121a627b0eeb00440a561ec077e21f72, type: 3}
   m_Color: {r: 0.16862746, g: 0.8, b: 0.20392157, a: 1}
@@ -125,11 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ade9c85ec1b6d04d8fdcf859432c95b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5594831506353772659, guid: f54000b68bb60844ea9aeec93dd91649,
+  projectile: {fileID: 5594831506353772659, guid: 41ada74a129137543990294485881f99,
     type: 3}
   shootPosition: {fileID: 0}
   cooldownToShoot: 1
-  attackRange: 1.5
+  attackRange: 1.8
 --- !u!114 &8187546045957474835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,13 +143,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxUpgrade: 3
-  cost: 000000000000000000000000
-  damages: 000000000000000000000000
+  cost: 140000003c00000078000000
+  damages: 080000001000000014000000
   attackRanges:
-  - 0
-  - 0
-  - 0
+  - 1.2
+  - 1.5
+  - 1.8
   cooldownsToShoot:
-  - 0
-  - 0
-  - 0
+  - 2
+  - 1.6
+  - 1.3

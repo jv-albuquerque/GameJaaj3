@@ -31,7 +31,6 @@ public class ResourceController : MonoBehaviour
         set
         {
             money = value;
-            Debug.Log(value);
             textMoney.text = money.ToString();
         }
         get

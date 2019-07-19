@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 
-public class ProjectileMovement : MonoBehaviour
+public class ProjectileSpawner : MonoBehaviour
 {
-    [SerializeField] private bool spawnOther = false;
-    [SerializeField] private GameObject spawnObject = null;
-
     [SerializeField] private float speed = 10f;
-    [SerializeField] private int damage = 10;
+    [SerializeField] private GameObject dpsPool = null;
 
     private GameObject target = null;
 
@@ -14,7 +11,7 @@ public class ProjectileMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(target != null)
+        if (target != null)
         {
             targetPos = target.transform.position;
             transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.fixedDeltaTime);
@@ -39,24 +36,15 @@ public class ProjectileMovement : MonoBehaviour
     {
         set
         {
-            if(spawnObject != null)
-            {
-                DpsPool dpsPool = spawnObject.GetComponent<DpsPool>();
-                if (dpsPool != null)
-                    dpsPool.SetDamage = damage;
-            }
-            else
-                damage = value;
+            dpsPool.GetComponent<DpsPool>().SetDamage = value;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject == target)
+        if (collision.gameObject == target)
         {
-            target.GetComponent<EnemyReceiveDamage>().Damage = damage;
-            if (spawnOther)
-                Instantiate(spawnObject, transform.position, transform.rotation);
+            Instantiate(dpsPool);
             Destroy(gameObject);
         }
     }

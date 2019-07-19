@@ -47,3 +47,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1863263741
+    locked: 0
+  - name: Pools
+    uniqueID: 535545819
+    locked: 0
+  - name: Enemys n Tiles
+    uniqueID: 598571081
+    locked: 0
+  - name: Towers
+    uniqueID: 3249401255
+    locked: 0
+  - name: UI
+    uniqueID: 756888709
+    locked: 0

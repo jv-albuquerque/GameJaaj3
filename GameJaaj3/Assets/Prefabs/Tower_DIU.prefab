@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1045566041
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 121a627b0eeb00440a561ec077e21f72, type: 3}
   m_Color: {r: 0.93333334, g: 0.9137255, b: 0.20784314, a: 1}
@@ -113,16 +113,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxUpgrade: 3
-  cost: 000000000000000000000000
-  damages: 000000000000000000000000
+  cost: 0f0000001e0000003c000000
+  damages: 0a000000140000001e000000
   attackRanges:
-  - 0
-  - 0
-  - 0
+  - 1.5
+  - 2.5
+  - 3.5
   cooldownsToShoot:
-  - 0
-  - 0
-  - 0
+  - 1
+  - 0.5
+  - 0.3
 --- !u!1 &7497156225977612452
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,11 +29,41 @@ public class Tile : MonoBehaviour
             Espermicide.SetActive(true);
             Condom.SetActive(true);
             DIU.SetActive(true);
+
+            TileButton tb = Acid.GetComponent<TileButton>();
+            if (tb.canBuy())
+                tb.SetGrey = false;
+            else
+                tb.SetGrey = true;
+
+            tb = Espermicide.GetComponent<TileButton>();
+            if (tb.canBuy())
+                tb.SetGrey = false;
+            else
+                tb.SetGrey = true;
+
+            tb = Condom.GetComponent<TileButton>();
+            if (tb.canBuy())
+                tb.SetGrey = false;
+            else
+                tb.SetGrey = true;
+
+            tb = DIU.GetComponent<TileButton>();
+            if (tb.canBuy())
+                tb.SetGrey = false;
+            else
+                tb.SetGrey = true;
         }
         else
         {
             upgrade.SetActive(true);
             sell.SetActive(true);
+
+            TowerUpgrade tu = ActiveTower.GetComponent<TowerUpgrade>();
+            if (tu.CanUpgrade && resource.Money >= tu.Cost)
+                upgrade.GetComponent<TileButton>().SetGrey = false;
+            else
+                upgrade.GetComponent<TileButton>().SetGrey = true;
         }
     }
 

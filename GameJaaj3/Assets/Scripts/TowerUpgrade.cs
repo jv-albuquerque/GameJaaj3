@@ -15,14 +15,15 @@ public class TowerUpgrade : MonoBehaviour
     private void Start()
     {
         towerShoot = GetComponent<TowerShoot>();
+        Upgrade();
     }
 
     public void Upgrade()
     {
         if(CanUpgrade)
         {
-            lvl++;
             towerShoot.Upgrade(damages[lvl], attackRanges[lvl], cooldownsToShoot[lvl]);
+            lvl++;
         }
     }
 
@@ -39,6 +40,14 @@ public class TowerUpgrade : MonoBehaviour
         get
         {
             return cost[lvl];
+        }
+    }
+
+    public int SellCost
+    {
+        get
+        {
+            return cost[lvl - 1];
         }
     }
 }

@@ -95,7 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ade9c85ec1b6d04d8fdcf859432c95b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
+  projectile: {fileID: 5594831506353772659, guid: f54000b68bb60844ea9aeec93dd91649,
+    type: 3}
   shootPosition: {fileID: 0}
   cooldownToShoot: 1
   attackRange: 1.5
@@ -112,9 +113,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxUpgrade: 3
-  damages: 
-  attackRanges: 
-  cooldownsToShoot: 
+  cost: 000000000000000000000000
+  damages: 000000000000000000000000
+  attackRanges:
+  - 0
+  - 0
+  - 0
+  cooldownsToShoot:
+  - 0
+  - 0
+  - 0
 --- !u!1 &7497156225977612452
 GameObject:
   m_ObjectHideFlags: 0

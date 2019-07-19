@@ -2883,11 +2883,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3518288685588360095, guid: dddeeec91ea0f76429a057ee2f7985a9,
-        type: 3}
-      propertyPath: cost.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7760640750044003571, guid: dddeeec91ea0f76429a057ee2f7985a9,
         type: 3}
       propertyPath: m_Name
@@ -2952,6 +2947,11 @@ PrefabInstance:
         type: 3}
       propertyPath: attackRange
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3518288685588360095, guid: dddeeec91ea0f76429a057ee2f7985a9,
+        type: 3}
+      propertyPath: cost.Array.size
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dddeeec91ea0f76429a057ee2f7985a9, type: 3}
@@ -3688,7 +3688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textMoney: {fileID: 770818836}
-  money: 10
+  money: 10000
 --- !u!1 &1327905384
 GameObject:
   m_ObjectHideFlags: 0

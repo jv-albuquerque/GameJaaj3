@@ -5,7 +5,7 @@ public class ResourceController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMoney = null;
 
-    [SerializeField] private int money = 10;
+    [SerializeField] private int money = 1000;
 
     private Cooldown moneyPerSec;
 
@@ -21,7 +21,7 @@ public class ResourceController : MonoBehaviour
     {
         if(moneyPerSec.IsFinished)
         {
-            Money += 1;
+            //Money += 1;
             moneyPerSec.Start();
         }
     }
@@ -31,6 +31,7 @@ public class ResourceController : MonoBehaviour
         set
         {
             money = value;
+            Debug.Log(value);
             textMoney.text = money.ToString();
         }
         get

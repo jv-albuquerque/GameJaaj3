@@ -57,14 +57,11 @@ public class Tile : MonoBehaviour
     {
         TowerUpgrade tu = tower.GetComponent<TowerUpgrade>();
 
-        Debug.Log(tu.Cost);
         if (tu.CanUpgrade && resource.Money >= tu.Cost)
         {
             ActiveTower = Instantiate(tower, transform.position, Quaternion.identity);
-
             tu = ActiveTower.GetComponent<TowerUpgrade>();
             resource.Money -= tu.Cost;
-            tu.Upgrade();
         }
         else
         {
@@ -74,6 +71,7 @@ public class Tile : MonoBehaviour
 
     public void SellTower()
     {
+        resource.Money += ActiveTower.GetComponent<TowerUpgrade>().SellCost / 2;
         GameObject.Destroy(ActiveTower);
         ActiveTower = null;
     }
@@ -83,7 +81,7 @@ public class Tile : MonoBehaviour
         TowerUpgrade tu = ActiveTower.GetComponent<TowerUpgrade>();
         if(tu.CanUpgrade && resource.Money >= tu.Cost)
         {
-            resource.Money = -tu.Cost;
+            resource.Money -= tu.Cost;
             tu.Upgrade();
         }
         else

@@ -143,6 +143,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxUpgrade: 3
-  damages: 
-  attackRanges: 
-  cooldownsToShoot: 
+  cost: 000000000000000000000000
+  damages: 000000000000000000000000
+  attackRanges:
+  - 0
+  - 0
+  - 0
+  cooldownsToShoot:
+  - 0
+  - 0
+  - 0

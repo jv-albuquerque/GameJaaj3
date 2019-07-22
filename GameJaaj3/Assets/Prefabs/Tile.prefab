@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7114306696866790276
 Transform:
   m_ObjectHideFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1031235865736143233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_Children: []
   m_Father: {fileID: 8950174195805859526}
   m_RootOrder: 4
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_SortingLayerID: 756888709
   m_SortingLayer: 5
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: f1cb4942cf81be442a5a9cf4713d394c, type: 3}
-  m_Color: {r: 0.8867924, g: 0.8836927, b: 0.35555357, a: 1}
+  m_Sprite: {fileID: 21300000, guid: bf7a4939869189a42a3e28c10592d072, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.36, y: 3.63}
     newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -107,7 +107,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.3
 --- !u!114 &9164097477202481446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +123,11 @@ MonoBehaviour:
   tile: {fileID: 939103620426231918}
   tower: {fileID: 7760640750044003571, guid: dddeeec91ea0f76429a057ee2f7985a9, type: 3}
   resource: {fileID: 0}
-  spriteRenderer: {fileID: 1345903287372227669}
   towerSpawn: 0
   sell: 0
   upgrade: 1
+  imgUpgrade1: {fileID: 21300000, guid: bf7a4939869189a42a3e28c10592d072, type: 3}
+  imgUpgrade2: {fileID: 21300000, guid: 530e8f00fd4ead14e9a9a86cacf184bb, type: 3}
 --- !u!1 &2623117681155413668
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5483276097066809270
 Transform:
   m_ObjectHideFlags: 0
@@ -250,10 +251,11 @@ MonoBehaviour:
   tile: {fileID: 939103620426231918}
   tower: {fileID: 7661225403661267134, guid: 749571f080b63b84cbda981b1ec519b6, type: 3}
   resource: {fileID: 0}
-  spriteRenderer: {fileID: 2200450739740725897}
   towerSpawn: 1
   sell: 0
   upgrade: 0
+  imgUpgrade1: {fileID: 0}
+  imgUpgrade2: {fileID: 0}
 --- !u!1 &4025788615156999473
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7472522611480810377
 Transform:
   m_ObjectHideFlags: 0
@@ -377,10 +379,11 @@ MonoBehaviour:
   tile: {fileID: 939103620426231918}
   tower: {fileID: 6004030780120530894, guid: f68158c5f17608940b68db4144779373, type: 3}
   resource: {fileID: 0}
-  spriteRenderer: {fileID: 2139883712281267532}
   towerSpawn: 1
   sell: 0
   upgrade: 0
+  imgUpgrade1: {fileID: 0}
+  imgUpgrade2: {fileID: 0}
 --- !u!1 &4698500440650868673
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6515364651417485291
 Transform:
   m_ObjectHideFlags: 0
@@ -504,10 +507,11 @@ MonoBehaviour:
   tile: {fileID: 939103620426231918}
   tower: {fileID: 7760640750044003571, guid: dddeeec91ea0f76429a057ee2f7985a9, type: 3}
   resource: {fileID: 0}
-  spriteRenderer: {fileID: 1142798798565268390}
   towerSpawn: 0
   sell: 1
   upgrade: 0
+  imgUpgrade1: {fileID: 0}
+  imgUpgrade2: {fileID: 0}
 --- !u!1 &5378264444951311797
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7487265786919148267
 Transform:
   m_ObjectHideFlags: 0
@@ -631,10 +635,11 @@ MonoBehaviour:
   tile: {fileID: 939103620426231918}
   tower: {fileID: 3974581221937831728, guid: e607d76cf7721694e8818afdbcb916cc, type: 3}
   resource: {fileID: 0}
-  spriteRenderer: {fileID: 3587894080920623929}
   towerSpawn: 1
   sell: 0
   upgrade: 0
+  imgUpgrade1: {fileID: 0}
+  imgUpgrade2: {fileID: 0}
 --- !u!1 &8950174195805859524
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6758004646651493711
 Transform:
   m_ObjectHideFlags: 0
@@ -890,7 +895,8 @@ MonoBehaviour:
   tile: {fileID: 939103620426231918}
   tower: {fileID: 7760640750044003571, guid: dddeeec91ea0f76429a057ee2f7985a9, type: 3}
   resource: {fileID: 0}
-  spriteRenderer: {fileID: 1893878664350936759}
   towerSpawn: 1
   sell: 0
   upgrade: 0
+  imgUpgrade1: {fileID: 0}
+  imgUpgrade2: {fileID: 0}

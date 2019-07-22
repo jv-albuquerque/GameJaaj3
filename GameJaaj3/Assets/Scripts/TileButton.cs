@@ -14,9 +14,14 @@ public class TileButton : MonoBehaviour
     public bool sell = false;
     public bool upgrade = false;
 
+    [SerializeField] private Sprite imgUpgrade1 = null;
+    [SerializeField] private Sprite imgUpgrade2 = null;
+
     private void Start()
     {
         originalColor = GetComponent<SpriteRenderer>().color;
+        if(upgrade)
+            GetComponent<SpriteRenderer>().sprite = imgUpgrade1;
         gameObject.SetActive(false);
     }
 
@@ -42,7 +47,7 @@ public class TileButton : MonoBehaviour
         set
         {
             if (value)
-                GetComponent<SpriteRenderer>().color = Color.grey;
+                GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
             else
                 GetComponent<SpriteRenderer>().color = originalColor;
         }
@@ -56,6 +61,11 @@ public class TileButton : MonoBehaviour
     private void Upgrade()
     {
         tile.Upgrade();
+    }
+
+    public void SetUpgradeImage()
+    {
+        GetComponent<SpriteRenderer>().sprite = imgUpgrade2;
     }
 
     private void Sell()

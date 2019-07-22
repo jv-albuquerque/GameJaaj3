@@ -113,6 +113,7 @@ public class Tile : MonoBehaviour
         {
             resource.Money -= tu.Cost;
             tu.Upgrade();
+            upgrade.GetComponent<TileButton>().SetUpgradeImage();
         }
         else
         {

@@ -17,3 +17,4 @@ A TD (Tower Defense) game, that the player cotrols the defense putting the tower
 
 ## Authors
 * **João Vitor Filgueira Albuquerque** - [jv-albuquerque](https://github.com/jv-albuquerque)
+* **Samir Pessoa Rodrigues** -

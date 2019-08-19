@@ -15,6 +15,10 @@ A TD (Tower Defense) game, that the player cotrols the defense putting the tower
    * Block to put the tower anywhere
    * Make other types of tower
 
+* **Samir Rodrigues**
+   * IA Enemy
+   * IA Ally
+
 ## Authors
 * **João Vitor Filgueira Albuquerque** - [jv-albuquerque](https://github.com/jv-albuquerque)
 * **Samir Pessoa Rodrigues** - [SamirRodrigues](https://github.com/SamirRodrigues)
